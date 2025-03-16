@@ -55,3 +55,7 @@ npm run format
     },
 }
 ```
+
+## Init Database SQLite w Prisma
+
+- [Nest docs](https://docs.nestjs.com/recipes/prisma)
