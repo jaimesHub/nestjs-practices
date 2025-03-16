@@ -75,5 +75,7 @@ npm run format
      5.1. Update [schema file](./crud-prisma/prisma/schema.prisma) with `provider = "sqlite"`
      5.2. Update `.env` file: `DATABASE_URL="file:./dev.db"`
   6. Update the [schema file](./crud-prisma/prisma/schema.prisma) with models
+     6.1. Using AI for converting from `dbml` to `schema.prisma`
+     6.2. Double check & copy converted data from AI to [prisma schema](./crud-prisma/prisma/schema.prisma) file
   7. Sync up with DB: `$ npx prisma db push`
   8. Browse your data: `$ npx prisma studio`
