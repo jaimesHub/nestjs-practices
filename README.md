@@ -59,3 +59,21 @@ npm run format
 ## Init Database SQLite w Prisma
 
 - [Nest docs](https://docs.nestjs.com/recipes/prisma)
+- Commands
+  ```bash
+      $ npx prisma # how to use prisma cli
+      $ npx prisma init # create your initial Prisma setup
+      $ npx prisma db push # sync up with db
+      $ npx prisma studio # Browser: http://localhost:5555/
+  ```
+- Summary
+  1. [Create nestjs project](https://docs.nestjs.com/recipes/prisma#create-your-nestjs-project)
+  2. [Setup prisma](https://docs.nestjs.com/recipes/prisma#set-up-prisma)
+  3. Getting more info `Prisma CLI`: `$ npx prisma`
+  4. Create your initial Prisma setup: `$ npx prisma init`
+  5. [Set the DB Connection](https://docs.nestjs.com/recipes/prisma#set-the-database-connection)
+     5.1. Update [schema file](./crud-prisma/prisma/schema.prisma) with `provider = "sqlite"`
+     5.2. Update `.env` file: `DATABASE_URL="file:./dev.db"`
+  6. Update the [schema file](./crud-prisma/prisma/schema.prisma) with models
+  7. Sync up with DB: `$ npx prisma db push`
+  8. Browse your data: `$ npx prisma studio`
