@@ -79,3 +79,34 @@ npm run format
      6.2. Double check & copy converted data from AI to [prisma schema](./crud-prisma/prisma/schema.prisma) file
   7. Sync up with DB: `$ npx prisma db push`
   8. Browse your data: `$ npx prisma studio`
+
+## Integrate Prisma Service into Share module
+
+- [Install and generate Prisma Client](https://docs.nestjs.com/recipes/prisma#install-and-generate-prisma-client)
+
+  ```bash
+  $ npm install @prisma/client
+  ```
+
+- Generate `Shared module` using CLI
+
+  ```bash
+  $ cd crud-prisma
+  $ nest g mo shared
+  $ cd src/shared
+  $ mkdir services
+  $ cd services
+  $ nest g s prisma --flat --no-spec
+  ```
+
+  - --flat: không tạo ra folder
+  - --no-spec: không tạo ra file \*.spec.ts
+
+- [Use Prisma Client in your NestJS services](https://docs.nestjs.com/recipes/prisma#use-prisma-client-in-your-nestjs-services)
+
+- Update `shared.module.ts`
+
+  - @Global()
+  - @Module()
+
+- Use PrismaService & Test APIs
