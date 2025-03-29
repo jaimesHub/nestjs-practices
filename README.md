@@ -110,3 +110,7 @@ npm run format
   - @Module()
 
 - Use PrismaService & Test APIs
+
+## Popular NestJS CLI Commands
+
+- Ref: [CRUD-PRISMA](./crud-prisma/docs/prisma-cli.md)
