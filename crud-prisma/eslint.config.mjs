@@ -29,7 +29,12 @@ export default tseslint.config(
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-floating-promises': 'warn',
-      '@typescript-eslint/no-unsafe-argument': 'warn'
+      '@typescript-eslint/no-unsafe-argument': 'warn',
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/only-throw-error': 'off',
+      'prettier/prettier': 'off',
+      '@typescript-eslint/no-unsafe-call': 'off', // my config
+      '@typescript-eslint/no-unsafe-member-access': 'off', // my config
     },
   },
 );

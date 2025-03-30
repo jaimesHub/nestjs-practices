@@ -1,4 +1,4 @@
-# NESTJS Take notes
+# NESTJS Take notes [Nest.js Super]
 
 ## Commands
 
@@ -114,3 +114,15 @@ npm run format
 ## Popular NestJS CLI Commands
 
 - Ref: [CRUD-PRISMA](./crud-prisma/docs/prisma-cli.md)
+
+## Validate file .env
+
+- node v22.9.0
+- life-circle nestjs
+- [validation in nestjs](https://docs.nestjs.com/techniques/validation#using-the-built-in-validationpipe)
+- `enableImplicitConversion: true` --> convert env vars (have number type) from string to number
+- Summary
+  - `eslint.config.mjs` --> turn off 2 rules
+  - `package.json` --> `class-validator`, `class-transformer`, `dotenv`
+  - `tsconfig.json` --> `"esModuleInterop": true` => enable `import fs from fs`
+  - `shared/config.ts` --> validation .env file using `class-validator`, `class-transformer`
